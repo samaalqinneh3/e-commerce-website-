@@ -1,0 +1,28 @@
+body{
+   background-image:url("back.jpg");
+}
+
+
+
+form{
+	margin-top: 10em;
+    border-radius: 20%;
+    background-color: gray;
+    padding: 4em;
+    width: 30%;
+    font-family: Courier New;
+	opacity: 0.7;
+	font-size:20px;
+ }
+  
+  
+button {
+	background-color: #e7e7e7; 
+	color: black; 
+	padding:1em;
+   }
+   
+input{
+	width:100%;
+}
+
