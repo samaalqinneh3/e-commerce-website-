@@ -1,5 +1,6 @@
 body{
-   background-image:url("back.jpg");
+   background-image:url("sama00.jpg")
+
 }
 
 
@@ -7,12 +8,13 @@ body{
 form{
 	margin-top: 10em;
     border-radius: 20%;
-    background-color: gray;
+    background-color:black;
     padding: 4em;
     width: 30%;
     font-family: Courier New;
-	opacity: 0.7;
+	opacity: 0.8;
 	font-size:20px;
+   color:white;
  }
   
   

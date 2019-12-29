@@ -11,26 +11,27 @@
 <body>
 <center>
 
-<form>
+<form action= "login.php" method="post">
 
   <label for="fname"> <h4> user name : </h4> </label>
   <br>
  
-    <input type="text" id="fname" name="user name : " placeholder="user name">
+    <input type="text" id="fname" name="username" placeholder="user name" required>
 <br>
 
     <label for="lname">  <h4> password : </h4> </label>
 <br>
 
-    <input type="text" id="lname" name="password  " placeholder="***********">
+    <input type="password" id="lname" name="password"  required>
 <br>
 <br>
 
-  <button type="button"> Sign Up</button>
+  <button  name ="login-submit"> Login </button>
 <br>
 <br>
+
 </form>
-<a href="url">sign up</a>
+<a href="signup.html">sign up</a>
 </center>
 
 
