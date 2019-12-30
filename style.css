@@ -1,7 +1,12 @@
   body{
-   background-image: url("sama00.jpg");
-  }
+   background-image: url("sama100.jpg");
+   
+ }
   
+  .name,.w3-padding{
+	  
+	  color:white;
+  }
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -13,7 +18,7 @@
 
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 0px solid rgba(0, 0, 5, 2.5);
   padding: 20px;
   font-size: 30px;
   text-align: center;
@@ -35,3 +40,6 @@ font-family: Courier New;
 div{
 border-radius: 8%;	
 }
+.material-icons {vertical-align:-14%};
+
+

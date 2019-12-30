@@ -2,11 +2,7 @@
   if(isset($_POST['login-submit'])){
 	  $username = $_POST ['username']  ;
 	  $password = $_POST['password'] ;
-	  
 	 
-	
-	  
-	  
 	  //connect  to data base 
 	  $dbhost = "localhost";
 	  $dbuser = "root";
@@ -25,10 +21,11 @@
 
       if($result){
 	    $r = mysqli_fetch_assoc($result);
-		if($r['password'] == $password){
+		$passwordcheck = password_verify ($password,$r['password']);
+		if($passwordcheck == true){
 			    session_start();
 				$_SESSION["username"] = $username ;
-				header("location:mabe3at.php");
+				header("location:mabe3at.php?u=".$username);
 			exit();
 			
 		}
@@ -40,8 +37,7 @@
 		
 	  }
 	  
-  }
-     header("location:login.html");
+  }     header("location:login.html");
 			exit();
 			
 	

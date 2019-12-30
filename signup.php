@@ -19,7 +19,8 @@ if(isset($_POST['signup_submit'])){
 		  die("connection failed");
 		  
 	   }
-       $sql ="INSERT INTO `users`(`username`, `password`, `email`) VALUES ('".$username."','".$password."','".$gmail."')";
+	   $hash = password_hash($password , PASSWORD_DEFAULT);
+       $sql ="INSERT INTO `users`(`username`, `password`, `email`) VALUES ('".$username."','".$hash."','".$gmail."')";
 
 	   $result = mysqli_query ($conn, $sql);
 	   if($result){
